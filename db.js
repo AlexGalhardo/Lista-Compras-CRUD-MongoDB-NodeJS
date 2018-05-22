@@ -1,6 +1,6 @@
 var mongoClient = require("mongodb").MongoClient;
 
-mongoClient.connect("mongodb://localhost:27017/listadecompras")
+mongoClient.connect("mongodb://heroku_htpq3grn:qo6gvboshtnc8miu7esmb67r8@ds231360.mlab.com:31360/heroku_htpq3grn/listadecompras")
 	.then(conn => global.conn = conn.db("listadecompras"))
 	.catch(err => console.log(err))
 
