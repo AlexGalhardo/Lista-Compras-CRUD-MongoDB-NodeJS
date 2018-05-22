@@ -1,7 +1,7 @@
 var mongoClient = require("mongodb").MongoClient;
 
-mongoClient.connect("mongodb://heroku_htpq3grn:qo6gvboshtnc8miu7esmb67r8@ds231360.mlab.com:31360/heroku_htpq3grn/listadecompras")
-	.then(conn => global.conn = conn.db("listadecompras"))
+mongoClient.connect("mongodb://heroku_htpq3grn:qo6gvboshtnc8miu7esmb67r8@ds231360.mlab.com:31360/heroku_htpq3grn")
+	.then(conn => global.conn = conn.db("heroku_htpq3grn"))
 	.catch(err => console.log(err))
 
 function findAll(callback){
