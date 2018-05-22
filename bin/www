@@ -13,14 +13,9 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-// var port = normalizePort(process.env.PORT || '3000');
-// app.set('port', port);
-
-var port = process.env.PORT || 3000;
+var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-app.listen(port, function () {
-    console.log('Umbler listening on port %s', port);
-});
+
 
 /**
  * Create HTTP server.

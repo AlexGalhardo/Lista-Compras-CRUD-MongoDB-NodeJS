@@ -1,6 +1,7 @@
 var mongoClient = require("mongodb").MongoClient;
 
-mongoClient.connect("mongo_galhardomongo:27017")
+//mongoClient.connect("mongodb://localhost:27017/listadecompras")
+mongoClient.connect("mongodb://localhost:27017/listadecompras")
 	.then(conn => global.conn = conn.db("listadecompras"))
 	.catch(err => console.log(err))
 
