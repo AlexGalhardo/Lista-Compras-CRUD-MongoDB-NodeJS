@@ -1,7 +1,7 @@
 var mongoClient = require("mongodb").MongoClient;
 
-mongoClient.connect("mongodb://localhost:27017/listadecompras")
-	.then(conn => global.conn = conn.db("listadecompras"))
+mongoClient.connect("mongodb://mustafar.mongodb.umbler.com:51003/listadecompras")
+	.then(conn => global.conn = conn.db("galhardomongo"))
 	.catch(err => console.log(err))
 
 function findAll(callback){
